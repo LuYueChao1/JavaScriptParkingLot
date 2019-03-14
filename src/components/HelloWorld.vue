@@ -31,10 +31,14 @@
 </template>
 
 <script>
+import {test} from '../testByBrowser.js'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  created(){
+    test()
   }
 }
 </script>
